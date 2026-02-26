@@ -120,7 +120,7 @@ export default function Discover() {
           >
             <div className="relative h-64 bg-stone-100 flex-shrink-0">
               <img 
-                src={currentProfile.avatar.replace('150', '400')} 
+                src={currentProfile.avatar} 
                 alt={currentProfile.name} 
                 className="w-full h-full object-cover" 
                 referrerPolicy="no-referrer" 

@@ -23,6 +23,9 @@ export const DataProvider = ({ children }: { children: ReactNode }) => {
   const [interactions, setInteractions] = useState<Interaction[]>([
     { fromUserId: 'u2', toUserId: 'u1', type: 'like' }, // Sarah liked Alex
     { fromUserId: 'u3', toUserId: 'u1', type: 'like' }, // Mike liked Alex
+    { fromUserId: 'u5', toUserId: 'u1', type: 'like' }, // David liked Alex
+    { fromUserId: 'u6', toUserId: 'u1', type: 'like' }, // Jessica liked Alex
+    { fromUserId: 'u8', toUserId: 'u1', type: 'pass' }, // Chloe passed Alex
   ]);
 
   const addListing = (listing: Listing) => {
