@@ -38,3 +38,9 @@ export type Listing = {
   images: string[];
   amenities: string[];
 };
+
+export type Interaction = {
+  fromUserId: string;
+  toUserId: string;
+  type: 'like' | 'pass';
+};

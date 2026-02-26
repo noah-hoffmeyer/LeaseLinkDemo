@@ -4,7 +4,7 @@ import { DataProvider } from './context/DataContext';
 import Layout from './components/Layout';
 import Login from './pages/Login';
 import Listings from './pages/Listings';
-import Profiles from './pages/Profiles';
+import Discover from './pages/Discover';
 import Matches from './pages/Matches';
 import MyProfile from './pages/MyProfile';
 
@@ -33,8 +33,8 @@ function AppContent() {
       case '/':
       case '/listings':
         return <Listings />;
-      case '/profiles':
-        return <Profiles />;
+      case '/discover':
+        return <Discover />;
       case '/matches':
         return <Matches />;
       case '/my-profile':

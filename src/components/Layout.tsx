@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useAuth } from '../context/AuthContext';
-import { Home, Users, UserCircle, LogOut, Menu, X } from 'lucide-react';
+import { Home, Search, Heart, UserCircle, LogOut, Menu, X } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,10 +14,10 @@ export default function Layout({ children, currentPath, navigate }: LayoutProps)
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   const navItems = [
-    { name: 'Listings', path: '/listings', icon: Home },
-    { name: 'Roommates', path: '/profiles', icon: Users },
-    { name: 'Matches', path: '/matches', icon: Users },
-    { name: 'My Profile', path: '/my-profile', icon: UserCircle },
+    { name: 'Housing', path: '/listings', icon: Home },
+    { name: 'Discover', path: '/discover', icon: Search },
+    { name: 'Matches', path: '/matches', icon: Heart },
+    { name: 'Profile', path: '/my-profile', icon: UserCircle },
   ];
 
   const handleNav = (path: string) => {
